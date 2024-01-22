@@ -1,0 +1,127 @@
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.header-left {
+  text-align: center;
+  width: 25%;
+}
+
+.header-right {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+}
+.search {
+  width: 50%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url("../images/searchicon.png");
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+}
+
+/* Container/Content */
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+.sidebar {
+  margin-left: 3.5rem;
+}
+
+.content {
+  margin-left: 3.5rem;
+  margin-right: 3.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+section {
+  border-bottom: 2px rgba(0, 0, 0, 0.25) solid;
+  padding-bottom: 1rem;
+}
+.info-image {
+  text-align: center;
+}
+.info-label {
+  text-align: left;
+}
+.info-data {
+  text-align: left;
+}
+.info-table {
+  border: 1px solid #a2a9b1;
+  border-spacing: 3px;
+  background-color: #f8f9fa;
+  color: black;
+  margin: 0.5em 0 0.5em 1em;
+  padding: 0.2em;
+  float: right;
+  font-size: 88%;
+  line-height: 1.5em;
+  width: 22em;
+}
+.sections {
+  width: 75%;
+}
+.tables {
+  width: 25%;
+}
+ul {
+  list-style-type: none;
+}
+.globe-logo {
+  float: left;
+  margin-right: 10px;
+  width: 3.125em;
+  height: 3.125em;
+}
+
+.logo-container {
+  margin-left: 3.5rem;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  min-width: 13.875em;
+  flex-wrap: wrap;
+}
+.logo-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.logo-wrapper img {
+  margin: 1px;
+}
+
+.vector-button {
+  display: flex;
+  margin-right: 5px;
+}
+
+.vector-icon {
+  background-image: url("../images/expand.svg");
+  background-size: calc(max(0.75em, 12px));
+  width: 0.75em;
+  height: 0.75em;
+  display: block;
+  vertical-align: text-bottom;
+}
+
+.vector-button:hover {
+  cursor: pointer;
+}
+
+#vector-checkbox {
+  display: none;
+}
+.history-sub-list {
+  display: none;
+}
+#vector-checkbox:checked ~ .history-sub-list {
+  display: block;
+}
